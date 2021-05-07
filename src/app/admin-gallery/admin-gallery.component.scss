@@ -1,0 +1,31 @@
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    flex-wrap: wrap;
+}
+
+.image{
+    // width: 150px;
+    height: 150px;
+    padding: 0;
+    margin: 0;
+}
+
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem 1rem 1rem;
+    align-items: center;
+    border: 1.5px solid black;
+    background-color: lightgoldenrodyellow;
+
+    button{
+        background-color: crimson;
+        border-style: none;
+        border: 1px solid black;
+        color: white;
+        width: 100px;
+    }
+}

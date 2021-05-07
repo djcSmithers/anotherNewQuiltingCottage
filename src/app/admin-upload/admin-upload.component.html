@@ -1,0 +1,25 @@
+
+
+<form [formGroup]="imageForm" (ngSubmit)="onSubmit()" >
+    <div>
+        <button (click)="filePicker.click()" style="margin-left: 2rem; margin-top: 2rem;" mat-stroked-button type="button" >Pick Image</button>
+        <input type="file" style="visibility: hidden;" #filePicker (change)="onImagePicked($event)" multiple >
+    </div>
+    <div class="image-preview" *ngIf="imagePreview" >
+        <img *ngFor="let preview of imagePreview" [src]="preview">
+    </div>
+    <button type="submit" >Submit</button>
+</form>
+
+<button style="margin-top: 2rem; margin-left: 2rem;" (click)="viewGallery()" >Go to File Gallery</button>
+
+<!-- <form [formGroup]="imageForm" (ngSubmit)="onSubmit()">
+    <div>
+        <label for="images">Images</label>
+        <div>
+            <button mat-stroked-button type="button">Pick Image</button>
+        </div>
+        <input formControlName="images" type="file" name="images" id="images" multiple (change)="handleFileInput($event.target.files)">
+    
+    <button type="submit">Submit</button>
+</form> -->

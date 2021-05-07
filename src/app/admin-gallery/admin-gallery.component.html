@@ -1,0 +1,14 @@
+<div id="container" *ngIf="images.length > 0">
+  <div class="imgContainer" *ngFor="let image of images">
+    <img class="image" [src]="image.imagePath" [alt]="image.imageName" />
+    <button mat-stroked-button (click)="onDeleteImage(image)">Delete</button>
+  </div>
+</div>
+
+<div>
+    <button style="margin-left: 1rem" (click)="uploadFiles()"> Go to upload page </button>
+</div>
+
+<div *ngIf="images.length <= 0">
+  <p style="margin-left: 1rem">No Images Found</p>
+</div>

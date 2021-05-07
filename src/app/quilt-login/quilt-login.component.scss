@@ -1,0 +1,19 @@
+form{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+
+    input {
+        margin-left: 2rem;
+    }
+
+    label{
+        margin-left: 2rem;
+    }
+
+    button{
+        margin-top: 1rem;
+        margin-left: 2rem;
+        width: 50%;
+    }
+}
